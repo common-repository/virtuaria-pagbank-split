@@ -1,0 +1,87 @@
+@import url( ./seller-report.css);
+
+.button.print-report.button-primary {
+    margin-bottom: 20px;
+}
+#new-seller {
+    margin: 40px 0;
+    padding: 20px 20px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #b9b9b9;
+    display: table;
+    max-width: 370px;
+}
+#new-seller > label {
+    display: block;
+    font-size: 16px;
+    line-height: 27px;
+}
+#new-seller > input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#new-seller .button-primary {
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+}
+#new-seller > #seller-name {
+    margin-bottom: 0;
+}
+#new-seller > #seller-name + small {
+    margin: 3px 0 8px;
+    display: block;
+}
+#new-seller .title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Open sans", serif;
+}
+#message {
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 0;
+}
+#all-transations-table tbody tr td:nth-child(3),
+#all-transations-table thead tr th:nth-child(3),
+#all-transations-table tbody tr td:nth-child(4),
+#all-transations-table thead tr th:nth-child(4),
+#all-transations-table tbody th td:nth-child(5),
+#all-transations-table thead tr th:nth-child(5) {
+    text-align: center;
+}
+.account-id {
+    font-size: 80%;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    margin-top: 14px;
+    max-width: 170px;
+    margin-left: -90px;
+    visibility: hidden;
+    z-index: 2;
+    transition: max-height .3s;
+    max-height: 0;
+}
+.tip:hover + .account-id {
+    visibility: visible;
+    max-height: 100px;
+}
+.tip {
+    font-weight: bold;
+    border-radius: 25%;
+    border: 1px solid #2271b1;
+    padding: 0px 3px;
+    cursor: pointer;
+    font-size: 9px;
+}
+
+@media print {
+    #new-seller {
+        display: none;
+    }
+}

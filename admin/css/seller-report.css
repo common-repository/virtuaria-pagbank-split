@@ -1,0 +1,331 @@
+#all-transations-table_wrapper {
+    max-width: calc(100% - 40px);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    display: block !important;
+}
+select[name="all-transations-table_length"] {
+    width: 50px;
+}
+.itens-modal {
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    width: 1000px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height 0.5s ease;
+    right: 0;
+    z-index: 2;
+    font-family: 'Arial', sans-serif;
+}
+.woocommerce-Price-amount {
+    font-weight: bold;
+}
+#all-transations-table div.itens-modal ul.itens > li.total-line {
+    background-color: transparent;
+    border-bottom: none;
+}
+.total-line .total,
+.total-line .sold,
+.total-line .tax {
+    background-color: #ddf1ff;
+}
+.see-itens.active + .itens-modal {
+    max-height: 1000px;
+    visibility: visible;
+}
+.itens-modal .header {
+    font-weight: bold;
+    background-color: #eee;
+}
+.itens-modal .itens ul li {
+    border-right: 1px solid;
+    border-color: #fff;
+    padding: 10px 5px;
+    font-weight: bold;
+}
+.itens-modal .itens ul li:nth-child(2) {
+    font-weight: normal;
+}
+.itens-modal .itens ul {
+    display: block;
+}
+.itens-modal .itens ul li:nth-child(2) {
+    max-width: calc(100% - 540px);
+}
+.itens-modal .itens ul li:last-child {
+    border-right: none;
+}
+.itens ul li {
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 95px;
+}
+.itens-modal > p {
+    text-align: left;
+}
+.customer-cpf,
+.shipping-method {
+    margin: 0;
+}
+.disclaimer {
+    float: right;
+}
+.discount-text {
+    display: block;
+}
+td {
+    color: #000;
+    position: relative;
+}
+#all-transations-table tbody tr td:nth-child(4) {
+    text-align: center;
+}
+.itens-modal .itens > li {
+    margin-bottom: 0;
+}
+.itens-modal .itens {
+    margin: 0;
+    border: 1px solid #eee;
+}
+.itens-modal .itens > li:not(.header) {
+    border-bottom: 1px solid #e0e0e0;
+}
+.itens-modal .itens > li:nth-child(odd):not(.header) {
+    background-color: #f3fbf0;
+}
+.itens-modal .itens li:not(.header) ul li:nth-child(2) {
+    text-align: left;
+}
+.customer > h3 {
+    background-color: #eeeeee;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+.customer {
+    padding-bottom: 10px;
+    text-align: left;
+}
+.date-filter {
+    margin-bottom: 20px;
+}
+.date-filter > label:first-of-type {
+    margin-left: 0;
+}
+.date-filter > label {
+    margin-left: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.date-filter > input {
+    min-width: 200px;
+}
+.dataTables_wrapper .dataTables_filter {
+    margin-bottom: 10px;
+}
+/* Estilos gerais */
+#wpbody-content {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos da tabela */
+table.dataTable {
+    margin: 15px auto 6px auto;
+}
+#wpbody-content .dataTables_wrapper {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#wpbody-content td {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/* Estilos do cabeçalho da tabela */
+#wpbody-content table.dataTable thead th {
+    background-color: #424b3d;
+    color: #fff;
+    text-align: center;
+}
+/* Botões e inputs */
+#transations-cancel {
+    float: right;
+}
+#transations-cancel,
+#wpbody-content button,
+#wpbody-content input[type="date"],
+#wpbody-content select {
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+#wpbody-content button {
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+#wpbody-content button:hover {
+    background-color: #0056b3;
+}
+button.button.print-report.button-primary {
+    float: right;
+}
+/* Estilos Gerais do Cabeçalho */
+.header-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-bottom: 1px solid #e1e4e8;
+}
+/* Título e Subtítulo */
+.header-container h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.header-container p {
+    color: #666;
+    font-size: 16px;
+}
+/* Estilos do Contêiner de Filtros */
+.filter-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+/* Estilos dos Campos de Filtro */
+.filter-container input[type="date"],
+.filter-container select {
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+.filter-container label {
+    margin-right: 5px;
+    font-weight: bold;
+}
+/* Estilos da DataTable */
+.dataTables_wrapper {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Estilos do cabeçalho da tabela */
+.dataTables_wrapper .dataTables_length select,
+.dataTables_wrapper .dataTables_filter input {
+    padding: 4px 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+}
+.dataTables_wrapper .dataTables_length select {
+    padding: 2px 2px 2px 6px!important;
+    height: 32px;
+}
+/**Charts**/
+.chart-container {
+    margin-top: 60px;
+    background-color: #fff;
+    box-shadow: 0 0 2px #b9b9b9;
+    padding: 20px;
+    max-height: 400px;
+    border-radius: 8px;
+    max-width: calc(100% - 50px);
+}
+.chart-container.sellers {
+    margin: 40px auto 0;
+    max-width: 600px;
+    max-height: 520px;
+}
+#salesPieChart{
+    max-height: 400px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+#salesChart {
+    max-height: 280px;
+}
+.graphics {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+#selectVista {
+    min-width: 100px;
+}
+.wc-cancelled,
+.wc-pending,
+.wc-refunded,
+.wc-failed {
+    color: red;
+}
+.contact {
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+.comission {
+    font-size: 80%;
+}
+.discount-text {
+    font-weight: normal;
+    line-height: 6px;
+}
+.discount {
+    display: block;
+    font-size: 0.75em;
+    color: red;
+}
+
+@media only screen and ( max-width: 1299px) {
+    .itens-modal {
+        max-width: 800px;
+    }
+}
+@media only screen and ( max-width: 1024px) {
+    .itens-modal {
+        max-width: 750px;
+    }
+}
+@media only screen and ( max-width: 1024px) {
+    .itens-modal {
+        max-width: 590px;
+    }
+}
+@media only print {
+    .list-title + p,
+    #all-transations-table_length,
+    #all-transations-table_filter {
+        display: none;
+    }
+    button.see-itens.button-primary {
+        display: none;
+    }
+    .itens-modal {
+        position: static;
+        max-height: initial;
+        background-color: transparent;
+        visibility: visible;
+        box-shadow: none;
+    }
+    .customer > h3 {
+        background-color: transparent;
+        padding: 0;
+    }
+}

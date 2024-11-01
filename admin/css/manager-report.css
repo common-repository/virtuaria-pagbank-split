@@ -1,0 +1,13 @@
+@import url(seller-report.css);
+
+#all-transations-table .group-1,
+#all-transations-table .group-3 {
+    background-color: #e8f1f7;
+}
+#all-transations-table .group-2,
+#all-transations-table .group-4 {
+    background-color: #fdfff1;
+}
+#wpbody-content #all-transations-table td {
+    box-shadow: none;
+}

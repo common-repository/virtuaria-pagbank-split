@@ -1,0 +1,170 @@
+#seller-page {
+  font-family: 'Arial', sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  color: #333;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.seller-name {
+  font-size: 28px;
+  color: #000;
+  text-align: left;
+  margin-bottom: 11px;
+}
+.description {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+.reputation,
+.account_level,
+.sales {
+  text-align: left;
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 14px;
+}
+.reputation span,
+.account_level span,
+.sales span {
+    background: #878274;
+    color: white;
+    border-radius: 4px;
+    padding: 0px 5px;
+    display: inline-block;
+}
+.reputation span,
+.account_level span,
+.sales span {
+  background: #878274;
+  color: white;
+  border-radius: 4px;
+  padding: 0px 5px;
+  display: inline-block;
+}
+#seller-page .start-rating {
+  font-family: star;
+  position: relative;
+  font-size: 14px;
+}
+#seller-page .start-rating:before {
+  content: "sssss";
+}
+#seller-page .star {
+  position: absolute;
+  z-index: 2;
+  color: #fc0;
+  padding: 23px 0 0;
+  left: 0px;
+  top: 0;
+  overflow: hidden;
+}
+#seller-page .star:before {
+  content: "SSSSS";
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0px 5px;
+  color: yellow;
+}
+#seller-page .rating .star:before {
+  padding: 2px 5px;
+}
+.reviews {
+  background-color: #f2fff2;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  margin-top: 24px;
+  padding-top: 20px;
+}
+.review-title,
+.review {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding: 0 15px;
+}
+.review-title {
+  font-weight: bold;
+  padding-bottom: 10px;
+  list-style: none;
+  margin-left: 0;
+}
+.review:not(:last-child) {
+  border-bottom: 1px solid #ecf0f1;
+}
+.review:nth-child(even) {
+  background-color: #fff;
+}
+.review:nth-child(odd) {
+  background-color: #e5fbe5;
+}
+.review {
+  padding: 15px;
+}
+.author {
+  flex-basis: 20%;
+  text-align: left;
+}
+.content {
+  flex-basis: 50%;
+}
+.comment {
+  font-style: italic;
+  line-height: 20px;
+}
+.product {
+  margin-top: 5px;
+}
+.product a {
+  color: #3498db;
+  text-decoration: none;
+}
+.product a:hover {
+  text-decoration: underline;
+}
+.rating {
+  flex-basis: 30%;
+  text-align: right;
+  position: relative;
+}
+#seller-page .rating .start-rating {
+  left: calc(100% - 85px);
+  clear: both;
+  background-color: #878274;
+  max-width: 73.56px;
+  padding: 2px 5px 3px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  color: #fff;
+}
+.date {
+  font-size: 0.8em;
+  color: #95a5a6;
+  font-size: 13px;
+  color: #555;
+}
+.new-store {
+  background-color: gray;
+  display: table;
+  padding: 5px;
+  border-radius: 4px;
+  color: yellow;
+}
+
+@media screen and (max-width: 767px) {
+  .review-title,
+  .review {
+    flex-direction: column;
+    text-align: left;
+  }
+  .rating {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
